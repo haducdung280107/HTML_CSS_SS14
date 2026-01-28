@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.icons span {
+    margin-left: 15px;
+}
+
+.container {
+    padding: 60px 80px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 60px;
+}
+
+.product-image img {
+    width: 420px;
+    border-radius: 4px;
+}
+
+.product-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color {
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+}
+
+.black { background: #000; }
+.green { background: #4f6f6a; }
+.brown { background: #c8a46c; }
+.gray { background: #ddd; }
+
+.desc {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.desc a {
+    color: #4f6f6a;
+    text-decoration: none;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buy {
+    background: #4f6f6a;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.cart {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.related {
+    margin-top: 80px;
+}
+
+.related h2 {
+    margin-bottom: 30px;
+}
+
+.related-list {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 260px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.category {
+    font-size: 12px;
+    color: #999;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    border-top: 1px solid #eee;
+    margin-top: 80px;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    color: #777;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+        </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Lalasia</div>
+    <nav class="nav">
+        <a href="#">Product</a>
+        <a href="#">Services</a>
+        <a href="#">Article</a>
+        <a href="#">About Us</a>
+    </nav>
+    <div class="icons">
+        <span>🛒</span>
+        <span>👤</span>
+    </div>
+</header>
+
+<main class="container">
+    <section class="product-detail">
+        <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1582582494700-32f64c7e4a3c" alt="">
+        </div>
+
+        <div class="product-info">
+            <h1>White Aesthetic Chair</h1>
+            <p class="subtitle">Combination of wood and wool</p>
+
+            <div class="colors">
+                <span class="color black"></span>
+                <span class="color green"></span>
+                <span class="color brown"></span>
+                <span class="color gray"></span>
+            </div>
+
+            <p class="desc">
+                Faucibus facilisis morbi pharetra quis sed. Vitae suspendisse facilisis
+                facilisis ligula felis et a parturient aenean.
+                <a href="#">Read More</a>
+            </p>
+
+            <div class="price">$99.98</div>
+
+            <div class="buttons">
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add to Chart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="related">
+        <h2>Related Items</h2>
+
+        <div class="related-list">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="">
+                <p class="category">Decoration</p>
+                <h3>Wooden Aesthetic Chair</h3>
+                <span>$58.39</span>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="">
+                <p class="category">Decoration</p>
+                <h3>Plant With Clay Stand</h3>
+                <span>$61.49</span>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="">
+                <p class="category">Decoration</p>
+                <h3>Oval Gold Mirror</h3>
+                <span>$32.43</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-logo">
+        <h3>Lalasia</h3>
+        <p>Lalasia is digital agency that help you make better experience.</p>
+    </div>
+
+    <div class="footer-links">
+        <div>
+            <h4>Product</h4>
+            <a href="#">New Arrivals</a>
+            <a href="#">Best Selling</a>
+            <a href="#">Home Decor</a>
+            <a href="#">Kitchen Set</a>
+        </div>
+        <div>
+            <h4>Services</h4>
+            <a href="#">Catalog</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
